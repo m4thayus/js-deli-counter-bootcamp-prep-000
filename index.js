@@ -73,7 +73,7 @@ function currentLine(line, string = "") {
         //add comma to beggining of string
         string = ', ' + string
         //call function with the new shorter line and longer string
-        return currentLineRecursive(newLine, string)
+        return currentLine(newLine, string)
     }
 }
 
