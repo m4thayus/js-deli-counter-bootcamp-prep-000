@@ -25,7 +25,7 @@ function nowServing(line) {
 
 //Inputs: an array (line)
 //Outputs: string with # of ppl in line
-function currentLine(line) {
+function currentLineIterative(line) {
     //line must exist and have at least one entry
     if (line === undefined || line.length < 1) {
         return "The line is currently empty.";
@@ -52,7 +52,7 @@ function currentLine(line) {
 
 //Inputs: an array (current line), optionally a partial string list
 //Outputs: a fully formatted string list
-function currentLineRecursive(line, string = "") {
+function currentLine(line, string = "") {
     //line must exist and have at least one entry
     if (line === undefined || line.length < 1) {
         return "The line is currently empty.";
